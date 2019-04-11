@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <style type = "text/css">
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:14px;
+        }
+        .navbar-custom{
+        background-color: #123977;
+        }
+        .navbar a{
+        color: white !important;
+        font-size: 1.2em !important;
+        }
+        .navbar li{
+        padding-right: 5px;
+        }
+        
+        .box {
+        border:#ffffff solid 1px;
+        }
+        .container{
+            padding-top: 50px;
+        }
+        .footer{
+        background-image: url("images/footer1.jpg");
+        padding: 30px 0px 30px 0px;
+        margin-top: 40px;
+        }
+
+        </style>
+
+    </head>    
+<body>
+
+  <!-------- Header --------->
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top navbar-custom">
+      <a class="navbar-brand" href="#">TO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="listingform.html"><button type="button" class="btn btn-outline-light">+Add Listing</button></a>
+          </li> 
+        </ul>
+      </div>  
+    </nav>
+    <div class="jumbotron">
+    <div class="container">
+      <h1>Join us</h1> 
+        </div>
+    </div>
+<div class="container">
+<h2>Add your listing</h2>
+<p>Be the part of industry and get noticed</p>
+<h3><a href="listingdisplay.php">Businesses</a></h3>
+
+<form action="insertlisting.php" method="POST" align="left" class="needs-validation">
+  <div class="form-group">
+    
+    <label for="listingname">Listing Name:</label>
+    <input type="text" class="form-control" name="listingname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    
+    <label for="listingcity">Listing City:</label>
+    <input type="text" class="form-control" name="listingcity" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    
+    <label for="listingcategory">Category:</label>
+    <input type="text" class="form-control" name="listingcategory" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    
+    <label for="listingcontact">Contact:</label>
+    <input type="text" class="form-control" name="listingcontact" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <div class="form-group">
+    
+    <label for="listingemail">Email:</label>
+    <input type="email" class="form-control" name="listingemail" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+    <button type="submit" class="btn btn-primary" value="insert">Submit </button>
+</form>
+
+</div>
+ <!--    Footer   -->
+ <div class="footer text-center text-white" style="margin-bottom:0">
+  <h1 class="display-1 text-center">TO</h1>
+  <p>Toronto's very own</p>
+  <div class="row">
+    <div class="col-sm-4" ></div>
+    <div class="col-sm-4" ></div>
+    <div class="col-sm-4"><a href="https://www.facebook.com/"><img src="images/facebook-logo.png" height="40px" alt="facebook"></a>&nbsp &nbsp<a href="https://www.instagram.com/"><img src="images/instagram-logo.png" class="float" height="40px" alt="instagram"></a></div>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
